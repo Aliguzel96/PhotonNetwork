@@ -80,10 +80,8 @@ public class player : MonoBehaviour
 
     void hareket()
     {
-        float x = Input.GetAxis("Horizontal") * Time.deltaTime * 20f;
-        float y = Input.GetAxis("Vertical") * Time.deltaTime * 20f;
-
-        transform.Translate(x, y, 0);
+        transform.Translate(Vector3.forward * Time.deltaTime * Input.GetAxis("Vertical") * 20f);//anlýk hareket saðlama
+        transform.Translate(Vector3.right * Time.deltaTime * Input.GetAxis("Horizontal") * 20f);
     }
 
     void zipla()
