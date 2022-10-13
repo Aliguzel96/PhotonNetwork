@@ -18,3 +18,7 @@ Düşük gecikme çevrimiçi oyunları etkiler ve Photon Realtime, tüm yaygın 
 
 
 ## PUN (Photon Unity)
+
+- PUN, ‘Photon Unity Networking’in kısaltmasıdır. Oyuncuların ve oyun geliştiricilerin Unity çerçevesini Photon ile kolayca entegre etmelerinin bir yoludur. Bunu yapmak, yüksek sunucu hızları, gecikmesiz odalar ve uyumlu bir ağ için bileşenler oluşturmaya yardımcı olur.
+
+Realtime ile birlikte PUN, oyunların sorunsuz çalışmasına olanak tanıyan sunucuları, odaları ve diğer işlevleri değiştirmenin harika ve hızlı bir yoludur.
