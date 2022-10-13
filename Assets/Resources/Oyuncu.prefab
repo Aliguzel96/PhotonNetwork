@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 4535083279671071864}
   - component: {fileID: 755941023587416342}
   - component: {fileID: 6263635723221438832}
-  - component: {fileID: -1259808745896468766}
   - component: {fileID: -4547291254741710616}
+  - component: {fileID: 4411258292324833012}
   m_Layer: 0
   m_Name: Oyuncu
   m_TagString: Untagged
@@ -161,19 +161,6 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
---- !u!65 &-1259808745896468766
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3600588131880772185}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-4547291254741710616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,3 +173,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 711beb78f9c2c2c44862aaa2a8285457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noktalar:
+  - {fileID: 3409625007844588858, guid: 9457f9b84fdcb4143a7af5222b7b7840, type: 3}
+  - {fileID: 3653583171854535568, guid: 076125a3464dca4449c4c163e01fe126, type: 3}
+--- !u!65 &4411258292324833012
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3600588131880772185}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

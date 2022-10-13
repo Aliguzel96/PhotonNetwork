@@ -43,6 +43,7 @@ public class sunucuYonetim : MonoBehaviourPunCallbacks
     {
         Debug.Log("Odaya baðlanýldý");
         GameObject objem = PhotonNetwork.Instantiate("Oyuncu", Vector3.zero, Quaternion.identity, 0, null); //odaya oyuncuuyu ekledik
+        objem.GetComponent<PhotonView>().Owner.NickName = "Ali"; //oyuncuya nickName verme iþlemi
     }
 
     public override void OnLeftLobby()
