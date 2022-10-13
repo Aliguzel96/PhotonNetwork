@@ -38,10 +38,21 @@ Siteye giriş yaptıktan sonra Create New App deyip burada bulunan APP ID'yi Pun
 ref: https://www.3dmadmax.com/oyun_motor/cok-oyunculu-oyunlar-yapmak-icin-photon-motoru-sizi-bekliyor/#:~:text=PUN%20(Photon%20Unity),i%C3%A7in%20bile%C5%9Fenler%20olu%C5%9Fturmaya%20yard%C4%B1mc%C4%B1%20olur.
 
 
+## (&#x1F535;) Player Prefab'ının gerektirdiği özellikler ve özelliklerin sahneler arasında oyuncular bazında aktarılması;
+
+(&#x1F53D;)Oyuncuya manuel olarak eklenen scriptler dışında Photon sınıfından türeyen ön tanımlı bazı scriptlerinden eklenmesi gerekmektedir.
+- Bu özel scriptler sayesinde bir oyuncuda bulunan özellikler diğer oyuncunun sahnesi tarafından da görüntülenebilmektedir.
+     (&#x1F536;)Photon View (Temel script)
+     (&#x1F536;)Photon Transform View (Transform işlemlerinin diğer oyuncularda görüntülenebilmesi için)
+     (&#x1F536;)Photon Rigidbody View ..... ve bunun gibi özel scriptler
+     
+
+(&#x1F53D;)Bu scriptler dışında sahnede yer alacak oyuncuları da özel bir şekilde aktarıp görüntülememiz gerekmektedir.
+    Örneğin sahnemizde bulunan bir oyuncuyu baz alacak olursak bu oyuncunun da diğer oyuncular tarafından görüntülenebilmesi gerekir.
+Bunu sağlamak için Assets kök dizini içerisine "Resources" isimli bir klasör oluşturuyor ve kullanmak istediğimiz "Player" objesini buraya sürükleyip bırakarak bir prefab sağlamış oluyoruz. Bu oyuncuyu script üzerinde rahatlıkla Instantiate edebilir durumu gelmiş oluyoruz. 
 
 
-
-
+(&#x1F534;)Not: Script tarafında oyuncu ile ilgili bazı işlemler yaparken, özellikle fizik işlemleri gibi, PhotonView'in o objeye olan aidiyetini belirtmezsek sahnede bulunan bir oyuncunun yaptığı işlemler aynı odada ancak başka bir sahnede bulunan bir oyuncu tarafından yakalanır ve aynı komutlar onun için de işlenir. Bunun önüne geçebilmek için script tarafında "IsMine" sorgusunu yapmamız gerekmektedir.
 
 
 
